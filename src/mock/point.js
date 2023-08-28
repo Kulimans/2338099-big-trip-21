@@ -1,3 +1,4 @@
+
 const MOCK_POINTS = [
   {
     id: 'mockId1',
@@ -5,7 +6,7 @@ const MOCK_POINTS = [
     dateFrom: '2019-07-10T22:55:56.845Z',
     dateTo: '2019-07-11T11:22:13.375Z',
     isFavorite: false,
-    destination: 'destinationId1',
+    destination:'destinationId1',
     offers: [
       'offersId1'
     ],
@@ -22,6 +23,42 @@ const MOCK_POINTS = [
       'offersId2'
     ],
     type: 'bus'
+  },
+  {
+    id: 'mockId3',
+    basePrice: 300,
+    dateFrom: '2019-07-10T22:55:56.845Z',
+    dateTo: '2019-07-11T11:22:13.375Z',
+    isFavorite: true,
+    destination: 'destinationId3',
+    offers: [
+      'offersId3'
+    ],
+    type: 'Ship'
+  },
+  {
+    id: 'mockId4',
+    basePrice: 400,
+    dateFrom: '2019-07-10T22:55:56.845Z',
+    dateTo: '2019-07-11T11:22:13.375Z',
+    isFavorite: true,
+    destination: 'destinationId3',
+    offers: [
+      'offersId4'
+    ],
+    type: 'Check-in'
+  },
+  {
+    id: 'mockId5',
+    basePrice: 500,
+    dateFrom: '2019-07-10T22:55:56.845Z',
+    dateTo: '2019-07-11T11:22:13.375Z',
+    isFavorite: true,
+    destination: 'destinationId2',
+    offers: [
+      'offersId5'
+    ],
+    type: 'Flight'
   },
 ];
 
