@@ -1,7 +1,7 @@
 import {createElement} from '../render.js';
 
-function createPointTemplate(point, destination) {
-  console.log(destination);
+function createPointTemplate(point, destination, offer) {
+  //console.log(offer);
   const favoriteClassName = point.isFavorite
     ? 'event__favorite-btn event__favorite-btn--active'
     : 'event__favorite-btn';
@@ -23,12 +23,12 @@ function createPointTemplate(point, destination) {
         <p class="event__duration">01H 20M</p>
       </div>
       <p class="event__price">
-        &euro;&nbsp;<span class="event__price-value">${point.basePrice}</span>
+        &euro;&nbsp;<span class="event__price-value"></span>
       </p>
       <h4 class="visually-hidden">Offers:</h4>
       <ul class="event__selected-offers">
         <li class="event__offer">
-          <span class="event__offer-title">Book tickets</span>
+          <span class="event__offer-title">${point.type}</span>
           &plus;&euro;&nbsp;
           <span class="event__offer-price">40</span>
         </li>
@@ -52,13 +52,14 @@ function createPointTemplate(point, destination) {
 }
 
 export default class PointView {
-  constructor({point, destination}) {
+  constructor({point, destination, offer}) {
     this.point = point;
     this.destination = destination;
+    this.offer = offer;
   }
 
   getTemplate() {
-    return createPointTemplate(this.point, this.destination);
+    return createPointTemplate(this.point, this.destination, this.offer);
   }
 
   getElement() {

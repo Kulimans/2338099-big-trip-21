@@ -34,7 +34,7 @@ const MOCK_POINTS = [
     offers: [
       'offersId3'
     ],
-    type: 'Ship'
+    type: 'ship'
   },
   {
     id: 'mockId4',
@@ -44,7 +44,7 @@ const MOCK_POINTS = [
     isFavorite: true,
     destination: 'destinationId3',
     offers: [
-      'offersId4'
+      'offersId1'
     ],
     type: 'Check-in'
   },
@@ -56,7 +56,7 @@ const MOCK_POINTS = [
     isFavorite: true,
     destination: 'destinationId2',
     offers: [
-      'offersId5'
+      'offersId1'
     ],
     type: 'Flight'
   },
